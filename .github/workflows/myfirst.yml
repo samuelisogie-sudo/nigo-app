@@ -1,6 +1,6 @@
 
 # my first workflow
-name:testing testing workflow
+name: testing testing workflow
 # to indicate an event we uses on
 on:
     push:
@@ -13,9 +13,10 @@ on:
 
 jobs:
     testing-testing:
-        runs-on:ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - name : say hello
-              run:echo "hello word"
+              run: echo "hello word"
+
             - name : say goodbye
               run  : echo "goodbye for now"
